@@ -21,8 +21,8 @@ requirements:
     - python {{ python_min }}
     - pip
     - pytest-runner
-    - python >=3.8
   run:
+    - python >=3.10
     - configparser
     - contextily
     - geopandas
