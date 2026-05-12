@@ -19,9 +19,9 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.10,<3.14
+    - python >=3.10
   run:
-    - python >=3.10,<3.14
+    - python >=3.10
     - configparser
     - contextily
     - geopandas
@@ -33,8 +33,8 @@ requirements:
     - pyproj
     - rasterio
     - scipy
-    - simpeg >=0.22.0
-    - aurora >=0.3.13
+    - simpeg >=0.24.0
+    - aurora >=0.6.2
     - xarray >=2024.10.0
 
 test:
