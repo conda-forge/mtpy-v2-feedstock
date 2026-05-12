@@ -37,7 +37,7 @@ requirements:
     - scipy
     - simpeg >=0.22.0
     - aurora >=0.3.13
-    - xarray >=2025
+    - xarray >=2024.10.0
 
 test:
   imports:
