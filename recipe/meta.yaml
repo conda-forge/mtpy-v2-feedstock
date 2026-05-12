@@ -1,5 +1,5 @@
 {% set name = "mtpy-v2" %}
-{% set version = "2.0.13" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9818f81cb0542d9d95d9d6495e742170b4a3b28179fdda2891a68066ed277ba8
+  sha256: c40063e61b2e27678a69f6cd38d6ff6e04df519a31bf82226eb3433a4fd1386a
 
 build:
   number: 0
@@ -19,8 +19,9 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.8
+    - python >=3.10
   run:
+    - python >=3.10
     - configparser
     - contextily
     - geopandas
@@ -30,11 +31,11 @@ requirements:
     - numpy
     - pyevtk
     - pyproj
-    - python >=3.8
     - rasterio
     - scipy
-    - simpeg >=0.22.0
-    - aurora >=0.3.13
+    - simpeg >=0.24.0
+    - aurora >=0.6.2
+    - xarray >=2024.10.0
 
 test:
   imports:
