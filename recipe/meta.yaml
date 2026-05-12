@@ -1,5 +1,6 @@
 {% set name = "mtpy-v2" %}
 {% set version = "2.1.0" %}
+{% set python_min = "3.10" %}
 
 
 package:
@@ -17,6 +18,7 @@ build:
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
     - pytest-runner
     - python >=3.8
