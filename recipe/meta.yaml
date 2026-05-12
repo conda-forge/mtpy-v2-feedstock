@@ -32,7 +32,6 @@ requirements:
     - numpy
     - pyevtk
     - pyproj
-    - python >=3.8
     - rasterio
     - scipy
     - simpeg >=0.22.0
