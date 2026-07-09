@@ -23,7 +23,7 @@ requirements:
     - xarray >=2024.10.0
   run:
     - python >={{ python_min }}
-    - aurora >=0.3.13
+    - aurora >=0.5.2
     - configparser
     - contextily
     - geopandas
