@@ -19,7 +19,8 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.8
+    - python >=3.11
+    - xarray >=2024.10.0
   run:
     - configparser
     - contextily
@@ -30,7 +31,7 @@ requirements:
     - numpy
     - pyevtk
     - pyproj
-    - python >=3.8
+    - python >=3.11
     - rasterio
     - scipy
     - simpeg >=0.22.0
