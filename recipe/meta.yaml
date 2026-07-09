@@ -1,6 +1,6 @@
 {% set name = "mtpy-v2" %}
 {% set version = "2.1.2" %}
-
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -17,11 +17,13 @@ build:
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - pytest-runner
-    - python >=3.11
+    - setuptools
     - xarray >=2024.10.0
   run:
+    - python >= {{ python_min }}
+    - aurora >=0.3.13
     - configparser
     - contextily
     - geopandas
@@ -31,11 +33,10 @@ requirements:
     - numpy
     - pyevtk
     - pyproj
-    - python >=3.11
     - rasterio
     - scipy
     - simpeg >=0.22.0
-    - aurora >=0.3.13
+    - xarray >=2024.10.0
 
 test:
   imports:
@@ -45,6 +46,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
     - xarray >=2024.10.0
 
