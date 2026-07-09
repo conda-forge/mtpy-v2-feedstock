@@ -22,7 +22,7 @@ requirements:
     - setuptools
     - xarray >=2024.10.0
   run:
-    - python >= {{ python_min }}
+    - python >={{ python_min }}
     - aurora >=0.3.13
     - configparser
     - contextily
