@@ -23,7 +23,7 @@ requirements:
     - xarray >=2024.10.0
   run:
     - python >={{ python_min }}
-    - aurora >=0.5.2
+    - aurora >=0.6.2
     - configparser
     - contextily
     - geopandas
@@ -35,7 +35,7 @@ requirements:
     - pyproj
     - rasterio
     - scipy
-    - simpeg >=0.22.0
+    - simpeg >=0.25.0
     - xarray >=2024.10.0
 
 test:
@@ -59,3 +59,4 @@ about:
 extra:
   recipe-maintainers:
     - kujaku11
+    - akirkby
