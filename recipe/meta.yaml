@@ -1,6 +1,6 @@
 {% set name = "mtpy-v2" %}
-{% set version = "2.0.13" %}
-
+{% set version = "2.1.2" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9818f81cb0542d9d95d9d6495e742170b4a3b28179fdda2891a68066ed277ba8
+  sha256: eeaaddc9159296a6090b0e06945b308e065e797669029de8c4732bd2dd55ade4
 
 build:
   number: 0
@@ -17,24 +17,27 @@ build:
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - pytest-runner
-    - python >=3.8
+    - setuptools
+    - xarray >=2024.10.0
+    - matplotlib-base >=3.8
   run:
+    - python >={{ python_min }}
+    - aurora >=0.6.2
     - configparser
     - contextily
     - geopandas
-    - matplotlib-base
+    - matplotlib-base >=3.8
     - mt-metadata
     - mth5
     - numpy
     - pyevtk
     - pyproj
-    - python >=3.8
     - rasterio
     - scipy
-    - simpeg >=0.22.0
-    - aurora >=0.3.13
+    - simpeg >=0.25.0
+    - xarray >=2024.10.0
 
 test:
   imports:
@@ -44,7 +47,9 @@ test:
   commands:
     - pip check
   requires:
+    - python >={{ python_min }}
     - pip
+    - matplotlib-base >=3.8
 
 about:
   home: https://github.com/MTgeophysics/mtpy-v2
@@ -55,3 +60,4 @@ about:
 extra:
   recipe-maintainers:
     - kujaku11
+    - akirkby
