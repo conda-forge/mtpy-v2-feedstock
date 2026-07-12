@@ -48,7 +48,6 @@ test:
   requires:
     - python >={{ python_min }}
     - pip
-    - xarray >=2024.10.0
 
 about:
   home: https://github.com/MTgeophysics/mtpy-v2
