@@ -46,7 +46,7 @@ test:
   commands:
     - pip check
   requires:
-    - python {{ python_min }}
+    - python >={{ python_min }}
     - pip
     - xarray >=2024.10.0
 
