@@ -21,13 +21,14 @@ requirements:
     - pip
     - setuptools
     - xarray >=2024.10.0
+    - matplotlib-base >=3.8
   run:
     - python >={{ python_min }}
     - aurora >=0.6.2
     - configparser
     - contextily
     - geopandas
-    - matplotlib-base
+    - matplotlib-base >=3.8
     - mt-metadata
     - mth5
     - numpy
@@ -48,6 +49,7 @@ test:
   requires:
     - python >={{ python_min }}
     - pip
+    - matplotlib-base >=3.8
 
 about:
   home: https://github.com/MTgeophysics/mtpy-v2
