@@ -50,13 +50,13 @@ test:
   commands:
     - pip check
   requires:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - pip
     - matplotlib-base >=3.8
 
 about:
   home: https://github.com/MTgeophysics/mtpy-v2
-  summary: Python toolkit for standard magnetotelluric data processing.
+  summary: Python toolkit for working with magnetotelluric data.
   license: MIT
   license_file: LICENSE
 
