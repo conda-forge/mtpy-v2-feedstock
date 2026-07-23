@@ -38,6 +38,9 @@ requirements:
     - scipy
     - simpeg >=0.25.0
     - xarray >=2024.10.0
+    - bokeh
+    - panel
+    
 
 test:
   imports:
