@@ -1,5 +1,5 @@
 {% set name = "mtpy-v2" %}
-{% set version = "2.1.2" %}
+{% set version = "2.1.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: eeaaddc9159296a6090b0e06945b308e065e797669029de8c4732bd2dd55ade4
+  sha256: 6f79853655be840619f608a85d4234e8ece64e086b0fdd8dc5b297626693e4f3
 
 build:
   number: 0
@@ -38,6 +38,9 @@ requirements:
     - scipy
     - simpeg >=0.25.0
     - xarray >=2024.10.0
+    - bokeh
+    - panel
+    
 
 test:
   imports:
@@ -47,13 +50,13 @@ test:
   commands:
     - pip check
   requires:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - pip
     - matplotlib-base >=3.8
 
 about:
   home: https://github.com/MTgeophysics/mtpy-v2
-  summary: Python toolkit for standard magnetotelluric data processing.
+  summary: Python toolkit for working with magnetotelluric data.
   license: MIT
   license_file: LICENSE
 
