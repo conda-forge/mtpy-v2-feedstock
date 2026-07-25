@@ -1,5 +1,5 @@
 {% set name = "mtpy-v2" %}
-{% set version = "2.1.3" %}
+{% set version = "2.1.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6f79853655be840619f608a85d4234e8ece64e086b0fdd8dc5b297626693e4f3
+  sha256: 4a2996f1d76981a2eeb80a985f9fcdcb6cd80d29598e84d7ca8a16d16e32fe14
 
 build:
   number: 0
@@ -40,7 +40,7 @@ requirements:
     - xarray >=2024.10.0
     - bokeh
     - panel
-    
+
 
 test:
   imports:
