@@ -7,7 +7,7 @@ Home: https://github.com/MTgeophysics/mtpy-v2
 
 Package license: MIT
 
-Summary: Python toolkit for standard magnetotelluric data processing.
+Summary: Python toolkit for working with magnetotelluric data.
 
 Current build status
 ====================
